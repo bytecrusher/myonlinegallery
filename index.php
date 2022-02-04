@@ -89,7 +89,7 @@ if (isset($_POST['btnlogin'])) {
       <h2 class="text-center mb-4">Login to <?php echo ($pagetitlename); ?></h2>
       <form class="form-inline d-flex justify-content-center" name="login" method="post">
         <div class="form-group mx-sm-3 mb-2">
-          <label for="accesscode">Enter Access Code</label>
+          <label for="accesscode">Enter Access Code:</label>
         </div>
         <div class="form-group mx-sm-3 mb-2">
           <input type="text" class="form-control" id="accesscode" placeholder="accesscode" name="accesscode" required>
