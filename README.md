@@ -2,6 +2,8 @@
 
 **myonlinegallery** is a simple to use and install picture gallery, to share your pictures and photos on a secure way and is only accessible to everyone with the right accesscode. It's like an online Photo book.  
 
+![screenshot](screenshot.png)
+
 ## Installation
 Edit the "index.php" and change the Variable "$accesscode", "$pagetitlename" and "$shortDescription".  
 Simply copy the files and directories to your server.  
