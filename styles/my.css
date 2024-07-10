@@ -1,16 +1,16 @@
 body{
-    background-color: #799cb5
+  background-color: #9aa9b3
 }
-.demo-gallery > ul {
+/*.mygallery > ul {
   margin-bottom: 0;
-}
-.demo-gallery > ul > li {
-    float: left;
+}*/
+.mygallery > ul > li {
+    /*float: left;*/
     margin-bottom: 15px;
     margin-left: 20px;
-    width: 200px;
+    /*width: 200px;*/
 }
-.demo-gallery > ul > li a {
+.mygallery > ul > li a {
   border: 3px solid #FFF;
   border-radius: 3px;
   display: block;
@@ -18,7 +18,7 @@ body{
   position: relative;
   float: left;
 }
-.demo-gallery > ul > li a > img {
+.mygallery > ul > li a > img {
   -webkit-transition: -webkit-transform 0.15s ease 0s;
   -moz-transition: -moz-transform 0.15s ease 0s;
   -o-transition: -o-transform 0.15s ease 0s;
@@ -28,14 +28,14 @@ body{
   height: 100%;
   width: 100%;
 }
-.demo-gallery > ul > li a:hover > img {
+.mygallery > ul > li a:hover > img {
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
   transform: scale3d(1.1, 1.1, 1.1);
 }
-.demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+.mygallery > ul > li a:hover .mygallery-poster > img {
   opacity: 1;
 }
-.demo-gallery > ul > li a .demo-gallery-poster {
+.mygallery > ul > li a .mygallery-poster {
   background-color: rgba(0, 0, 0, 0.1);
   bottom: 0;
   left: 0;
@@ -46,7 +46,7 @@ body{
   -o-transition: background-color 0.15s ease 0s;
   transition: background-color 0.15s ease 0s;
 }
-.demo-gallery > ul > li a .demo-gallery-poster > img {
+.mygallery > ul > li a .mygallery-poster > img {
   left: 50%;
   margin-left: -10px;
   margin-top: -10px;
@@ -57,10 +57,10 @@ body{
   -o-transition: opacity 0.3s ease 0s;
   transition: opacity 0.3s ease 0s;
 }
-.demo-gallery > ul > li a:hover .demo-gallery-poster {
+.mygallery > ul > li a:hover .mygallery-poster {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.demo-gallery .justified-gallery > a > img {
+.mygallery .justified-gallery > a > img {
   -webkit-transition: -webkit-transform 0.15s ease 0s;
   -moz-transition: -moz-transform 0.15s ease 0s;
   -o-transition: -o-transform 0.15s ease 0s;
@@ -70,14 +70,14 @@ body{
   height: 100%;
   width: 100%;
 }
-.demo-gallery .justified-gallery > a:hover > img {
+.mygallery .justified-gallery > a:hover > img {
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
   transform: scale3d(1.1, 1.1, 1.1);
 }
-.demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+.mygallery .justified-gallery > a:hover .mygallery-poster > img {
   opacity: 1;
 }
-.demo-gallery .justified-gallery > a .demo-gallery-poster {
+.mygallery .justified-gallery > a .mygallery-poster {
   background-color: rgba(0, 0, 0, 0.1);
   bottom: 0;
   left: 0;
@@ -88,7 +88,7 @@ body{
   -o-transition: background-color 0.15s ease 0s;
   transition: background-color 0.15s ease 0s;
 }
-.demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+.mygallery .justified-gallery > a .mygallery-poster > img {
   left: 50%;
   margin-left: -10px;
   margin-top: -10px;
@@ -99,27 +99,27 @@ body{
   -o-transition: opacity 0.3s ease 0s;
   transition: opacity 0.3s ease 0s;
 }
-.demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+.mygallery .justified-gallery > a:hover .mygallery-poster {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.demo-gallery .video .demo-gallery-poster img {
+.mygallery .video .mygallery-poster img {
   height: 48px;
   margin-left: -24px;
   margin-top: -24px;
   opacity: 0.8;
   width: 48px;
 }
-.demo-gallery.dark > ul > li a {
+.mygallery.dark > ul > li a {
   border: 3px solid #04070a;
 }
-.home .demo-gallery {
+/*.home .mygallery {
   padding-bottom: 80px;
-}
-ul {
+}*/
+/*ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
+}*/
 .mycontainer {
     padding-top: 15px;
 }
@@ -132,3 +132,5 @@ ul {
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
+
+#map { height: 800px; }

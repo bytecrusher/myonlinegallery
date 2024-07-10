@@ -1,0 +1,11 @@
+
+*.jpeg
+*.mov
+*.jpeg
+node_modules/
+img/
+img_old/
+.DS_Store
+img/IMG_2172.jpeg
+img/IMG_2075.jpeg
+img/IMG_1922.jpeg
