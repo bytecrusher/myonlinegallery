@@ -6,7 +6,7 @@ return [
     'title' => 'My Online Gallery',
     'description' => 'Short description of your event.',
     'footer_email' => 'info@derguntmar.de',
-    'footer_year' => '2024',
+    'footer_year' => '2026',
     'base_path' => '',
   ],
   'auth' => [

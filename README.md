@@ -41,4 +41,9 @@ Pull request are welcome. For major changes, please open an issue first to discu
 Please make sure to update test as appropriate.  
 
 ## License
-TBD (Currently i'm not quite familiar with this, it's my first opensource project.)  
+This project is licensed under the MIT License. See `LICENSE` for details.  
+
+Third-party libraries keep their own licenses:
+- `lightGallery`: MIT
+- `Leaflet`: BSD-2-Clause
+- `Leaflet.markercluster`: MIT
