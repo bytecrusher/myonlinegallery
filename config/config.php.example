@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+return [
+  'site' => [
+    'title' => 'My Online Gallery',
+    'description' => 'Private trip gallery',
+  ],
+  'auth' => [
+    'access_code' => 'replace-me',
+    // Prefer a hash for shared deployments:
+    // 'access_code_hash' => '$2y$10$...',
+  ],
+];

@@ -6,23 +6,34 @@ In addition it has map function, which creates a path of the pictures in the dir
 ![screenshot](screenshot.png)
 
 ## Installation
-Edit the "index.php" and change the Variable "$accesscode", "$pagetitlename" and "$shortDescription".  
-Simply copy the files and directories to your server.  
-Copy your images into the sub Folder "img".  
+Copy the files and directories to your server.  
+Copy your images into the sub folder `img`.  
+Copy `config/config.php.example` to `config/config.php` and change the access code, title and description there.  
+Make sure PHP has write access to `cache/`, and that the `gd` and `exif` extensions are enabled for thumbnails and metadata.  
 
-Open you domain include the **My Online Gallery** install dir in your browser (example www.yourdomain.com/myonlinegallery).  
+Open your domain including the **My Online Gallery** install dir in your browser (example `www.yourdomain.com/myonlinegallery`).  
+To prebuild metadata and thumbnails before the first visitor opens the page, run `php bin/warm-cache.php`.  
 
-Aditional you can change the picture in the header, by replacing the "header.jpg" file under "styles" (it should be a picture in wide resolution).  
+Additionally you can change the picture in the header by replacing `styles/header.jpg`.  
 
 The following external libraries are used:
-- jQuery
-- lightgallery
-- Bootstrap
+- lightGallery
 - Leaflet
+- Leaflet.markercluster
 
 ## Description
-The login (accesscode validation) is done in PHP to grant access to the server.  
-Only if the access code is valid, the pictures will be show with the used JavaScript libraries.  
+The login (access code validation) is done in PHP to grant access on the server.  
+Only if the access code is valid, the gallery and map are rendered.  
+Gallery metadata is cached in `cache/gallery-index.json` and thumbnails are generated into `cache/thumbs` to keep repeated page loads fast.  
+
+## Project structure
+- `index.php`: request handling and bootstrapping
+- `config/`: default config and optional local overrides
+- `lib/`: gallery, auth and helper functions
+- `templates/`: HTML rendering
+- `assets/`: custom CSS and JavaScript
+- `cache/`: generated metadata cache and thumbnails
+- `bin/warm-cache.php`: CLI warmup for metadata and thumbnails
 
 ## Contributing
 Pull request are welcome. For major changes, please open an issue first to discuss what you would like to change.  
